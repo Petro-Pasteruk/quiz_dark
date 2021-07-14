@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="correct-answer hidden">
+    <div class="container">Well done, right!</div>
+</div>
+<div class="wrong-answer hidden">
+    <div class="container"></div>
+</div>
+<div class="quiz-statistics hidden">
+    <div class="container">
+        <div class="quiz-statistics__header">Congratulations! <br/> You're done!</div>
+        <div class="quiz-statistics__center">Your result:</div>
+        <div class="quiz-statistics__correct"></div>
+        <div class="quiz-statistics__wrong"></div>
+        <button class="quiz-statistics__home-btn">To the main</button>
+    </div>
+</div>
+
+<main>
+    <article class="main-window">
+        <div class="container">
+            <ul class="main-window__buttons">
+                <li class="main-window__button">
+                    <button><img src="img/World's%20sport.png" alt="History icon"> History</button>
+                </li>
+                <li class="main-window__button">
+                    <button><img src="img/Olympic%20Sports.png" alt="Правила icon"> Winter Olympic Sports Quiz</button>
+                </li>
+                <li class="main-window__button">
+                    <button><img src="img/Olympic%20game.png" alt="Рекорды icon"> Olympic game</button>
+                </li>
+                <li class="main-window__button">
+                    <button><img src="img/Funny%20Stories.png" alt="Факты icon"> Funny stories</button>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="quiz hidden">
+        <div class="quiz__question">
+            <div class="quiz__desc">Which European city is home to the world's first casino?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="London"> London</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Soccer"> Soccer</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Basket Ball"> Basket Ball</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Baseball"> Baseball<div class="right-answer">(+)</div></li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">What is the National Game of India?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Kabaddi"> Kabaddi</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Hockey"> Hockey<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Cricket"> Cricket</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Football"> Football</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">What is the National Sports of China?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Table Tennis"> Table Tennis<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Baseball"> Baseball</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Cricket"> Cricket</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Swimming"> Swimming</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">What is the National Game of New Zealand?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Archery"> Archery</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Rugby Union"> Rugby Union<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Cricket"> Cricket</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Golf"> Golf</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">What is the national sport in Japan?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Sumo Wrestling"> Sumo Wrestling<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Kung Fu"> Kung Fu</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Serfing"> Serfing</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Wrestling"> Wrestling</li>
+            </ul>
+        </div>
+        <div>
+            <button class="quiz__next-btn">Further</button>
+            <div class="quiz__progress-bar"></div>
+        </div>
+    </article>
+    <article class="quiz hidden">
+        <div class="quiz__question">
+            <div class="quiz__desc">When were the first winter Olympics?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="1922"> 1922</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="1924"> 1924<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="1932"> 1932</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="1902"> 1902</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">Since when Snowboarding is the Winter Olympic discipline?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="2016"> 2016</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="1997"> 1997</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="1900"> 1900</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="1998"> 1998<div class="right-answer">(+)</div></li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">How many players has a hockey team got on the ice?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="6"> 6<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="10"> 10</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="12"> 12</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="5"> 5</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">Which country has earned a gold medal in every Winter Olympic Games held since 1924?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Switzerland"> Switzerland</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Japan"> Japan</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="USA"> USA<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="France"> France</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Russia"> Russia</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">In Figure Skating, what is the maximum time given to athletes during the “short program” event?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="1 minute"> 1 minute</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="90 seconds"> 90 seconds</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="2 minutes and 30 seconds"> 2 minutes and 30 seconds<div class="right-answer">(+)</div>\</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="5 minutes"> 5 minutes</li>
+            </ul>
+        </div>
+        <div>
+            <button class="quiz__next-btn">Further</button>
+            <div class="quiz__progress-bar"></div>
+        </div>
+    </article>
+    <article class="quiz hidden">
+        <div class="quiz__question">
+            <div class="quiz__desc">What color have five intersecting rings of the Olympic’s flag?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="White, Red, Blue, Pink and Green"> White, Red, Blue, Pink and Green</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Red, Black, Breen, Blue and Yellow"> Red, Black, Breen, Blue and Yellow<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Blue, Brown, Yellow, Green and Black"> Blue, Brown, Yellow, Green and Black</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Red, Green, Black, Teal and Orange"> Red, Green, Black, Teal and Orange</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">The Olympic rings are symbolic of</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Five Patriot Super Bowl wins"> Five Patriot Super Bowl wins</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Five original countries to participate"> Five original countries to participate</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Five continents"> Five continents<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Five Greek city-states"> Five Greek city-states</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">To whom Greeks dedicated the Olympic Games?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Hera"> Hera</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Zeus"> Zeus<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Demeter"> Demeter</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Apollo"> Apollo</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">Since when Snowboarding is the Winter Olympic discipline?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="2016"> 2016</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="1997"> 1997</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="1900"> 1900</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="1998"> 1998<div class="right-answer">(+)</div></li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">What is the period between the Olympic Games?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Holiday"> Holiday</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Break"> Break</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Olympiad"> Olympiad<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Break"> Break</li>
+            </ul>
+        </div>
+        <div>
+            <button class="quiz__next-btn">Further</button>
+            <div class="quiz__progress-bar"></div>
+        </div>
+    </article>
+    <article class="quiz hidden">
+        <div class="quiz__question">
+            <div class="quiz__desc">In the marathon at the 1904 Olympic Games Frederick Lorz broke the finishing line tape and was greeted as the winner of the race. But he wasn’t judged as the winner. Why?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="He run in the opposite direction"> He run in the opposite direction</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="He shortened the way"> He shortened the way</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="He used a car"> He used a car<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="He run too fast"> He run too fast</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">In the marathon at the 1932 Olympic Games athletes had to run excess circles. Why?
+            </div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Athletes shorted the way"> Athletes shorted the way</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Athletes finished at the same time"> Athletes finished at the same time</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Judges lost count"> Judges lost count<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Judges didn’t saw who finished first"> Judges didn’t saw who finished first</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">What was used as a target in the early Olympic Games?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Plates"> Plates</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Ducks"> Ducks</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Pigeon"> Pigeon<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Sparrows"> Sparrows</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Deers"> Deers</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">In 1924, Robert LeGendre set a world record in the long jump, but finished in third place. Why?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="His foot was on the line"> His foot was on the line</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Judges made mistake"> Judges made mistake</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="he competed in another competition"> he competed in another competition<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="He had a bad fall"> He had a bad fall</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">in 1996, In Barcelona, there was found on the stadium...</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="New chain record holder"> New chain record holder</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Poisoned judge"> Poisoned judge</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Check for $ 40000"> Check for $ 40000<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Forgotten athletes dopingCheck for $ 40000"> Forgotten athletes dopingCheck for $ 40000</li>
+            </ul>
+        </div>
+        <div>
+            <button class="quiz__next-btn">Further</button>
+            <div class="quiz__progress-bar"></div>
+        </div>
+    </article>
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
